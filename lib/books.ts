@@ -6,6 +6,8 @@ export interface Book {
   genre: string
   shortDescription: string
   fullDescription: string
+  comingSoon?: boolean
+  releaseDate?: string
   retailers: {
     amazon?: string
     barnesAndNoble?: string
@@ -37,6 +39,20 @@ This is a story about the fences we build and the boundaries we must cross to fi
       amazon: 'https://www.amazon.com/Fence-Between-Us-Theodore-Edwards/dp/B0GW19CD1T/ref=sr_1_1?sr=8-1',
     },
     formats: ['Hardcover', 'Paperback', 'eBook', 'Audiobook'],
+  },
+  {
+    id: 'hearth-between-us',
+    title: 'The Hearth Between Us',
+    author: 'Theodore Edwards',
+    coverImage: '/covers/hearth-between-us.png',
+    genre: 'Historical Fiction',
+    shortDescription:
+      'A companion novel to The Fence Between Us. When the war ends and the men come home, the harder work begins — learning to live again beside the people who waited.',
+    fullDescription: `A companion novel to The Fence Between Us.\n\nWhen the war ends and the men come home, the harder work begins — learning to live again beside the people who waited. The hearth is still burning. Whether they can find their way back to it is another question entirely.`,
+    comingSoon: true,
+    releaseDate: 'June 1, 2026',
+    retailers: {},
+    formats: ['Hardcover', 'Paperback', 'eBook'],
   },
   {
     id: 'prisoners-of-fort-reno',

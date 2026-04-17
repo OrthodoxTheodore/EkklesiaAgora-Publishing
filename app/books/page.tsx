@@ -103,30 +103,44 @@ export default function BooksPage() {
                     ))}
                   </div>
 
-                  {/* Retailer buttons */}
-                  <div>
-                    <p className="font-cinzel text-xs tracking-[0.2em] uppercase text-parchment/40 mb-3">
-                      Available at
-                    </p>
-                    <div className="flex flex-wrap gap-3">
-                      {(
-                        Object.entries(book.retailers) as [string, string | undefined][]
-                      ).map(
-                        ([key, href]) =>
-                          href && (
-                            <a
-                              key={key}
-                              href={href}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="font-cinzel text-xs tracking-wider uppercase bg-gold text-navy px-5 py-2 hover:bg-gold-light transition-colors"
-                            >
-                              {retailerLabels[key] ?? key}
-                            </a>
-                          )
-                      )}
+                  {/* Coming Soon badge */}
+                  {book.comingSoon ? (
+                    <div className="flex flex-col gap-2">
+                      <div className="inline-flex items-center gap-3">
+                        <span className="font-cinzel text-xs tracking-[0.25em] uppercase bg-gold/15 border border-gold/40 text-gold px-4 py-2">
+                          Coming Soon
+                        </span>
+                        <span className="font-garamond italic text-parchment/50 text-sm">
+                          Releasing {book.releaseDate}
+                        </span>
+                      </div>
                     </div>
-                  </div>
+                  ) : (
+                    /* Retailer buttons */
+                    <div>
+                      <p className="font-cinzel text-xs tracking-[0.2em] uppercase text-parchment/40 mb-3">
+                        Available at
+                      </p>
+                      <div className="flex flex-wrap gap-3">
+                        {(
+                          Object.entries(book.retailers) as [string, string | undefined][]
+                        ).map(
+                          ([key, href]) =>
+                            href && (
+                              <a
+                                key={key}
+                                href={href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-cinzel text-xs tracking-wider uppercase bg-gold text-navy px-5 py-2 hover:bg-gold-light transition-colors"
+                              >
+                                {retailerLabels[key] ?? key}
+                              </a>
+                            )
+                        )}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
 

@@ -52,6 +52,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Coming Soon — The Hearth Between Us */}
+      <section className="py-24 px-6 bg-navy-mid border-y border-gold/15">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+          <div className="w-64 flex-shrink-0">
+            <div className="relative aspect-square border border-gold/30 overflow-hidden shadow-[0_0_40px_rgba(180,145,60,0.15)]">
+              <Image
+                src="/covers/hearth-between-us.png"
+                alt="The Hearth Between Us by Theodore Edwards"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <div className="flex-1 text-center md:text-left">
+            <p className="font-cinzel text-xs tracking-[0.35em] uppercase text-gold/60 mb-3">
+              Coming Soon · June 1, 2026
+            </p>
+            <h2 className="font-cinzel text-gold text-3xl md:text-4xl leading-snug mb-1">
+              The Hearth Between Us
+            </h2>
+            <p className="font-garamond italic text-parchment/50 text-base mb-6">
+              by Theodore Edwards · A companion to <em>The Fence Between Us</em>
+            </p>
+            <Divider />
+            <p className="font-garamond text-parchment/80 text-lg leading-relaxed mb-8">
+              When the war ends and the men come home, the harder work begins — learning to live
+              again beside the people who waited. The hearth is still burning. Whether they can
+              find their way back to it is another question entirely.
+            </p>
+            <Link
+              href="/books#hearth-between-us"
+              className="font-cinzel text-xs tracking-[0.2em] uppercase bg-gold text-navy px-8 py-3 hover:bg-gold-light transition-colors"
+            >
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Books */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
@@ -85,6 +124,11 @@ export default function Home() {
                   <p className="font-garamond italic text-parchment/50 text-sm mb-4">
                     by {book.author}
                   </p>
+                  {book.comingSoon && (
+                    <p className="font-cinzel text-xs tracking-[0.2em] uppercase text-gold/70 border border-gold/30 px-3 py-1 mb-4 self-start">
+                      Coming Soon · {book.releaseDate}
+                    </p>
+                  )}
                   <p className="font-garamond text-parchment/75 text-sm leading-relaxed flex-1 mb-6 line-clamp-3">
                     {book.shortDescription}
                   </p>
