@@ -19,6 +19,7 @@ function Divider() {
 const retailerLabels: Record<string, string> = {
   amazon: 'Amazon',
   barnesAndNoble: 'Barnes & Noble',
+  walmart: 'Walmart',
   appleBooks: 'Apple Books',
   googlePlay: 'Google Play',
   kobo: 'Kobo',

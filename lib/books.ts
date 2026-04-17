@@ -9,6 +9,7 @@ export interface Book {
   retailers: {
     amazon?: string
     barnesAndNoble?: string
+    walmart?: string
     appleBooks?: string
     googlePlay?: string
     kobo?: string
@@ -33,10 +34,7 @@ Four years of conflict will scatter these people across battlefields and into hi
 
 This is a story about the fences we build and the boundaries we must cross to find what it means to be forgiven, to forgive, and to come home to love.`,
     retailers: {
-      amazon: '#',
-      barnesAndNoble: '#',
-      appleBooks: '#',
-      googlePlay: '#',
+      amazon: 'https://www.amazon.com/Fence-Between-Us-Theodore-Edwards/dp/B0GW19CD1T/ref=sr_1_1?sr=8-1',
     },
     formats: ['Hardcover', 'Paperback', 'eBook', 'Audiobook'],
   },
@@ -62,10 +60,7 @@ What happens when a man like that refuses, just once, to barely look away?
 
 Rooted in documented history: the real enforcement network that operated inside Allied POW camps, the deaths staged as suicides, the men who carried the Reich's terror with them into captivity. It is a war story without a battlefield. It is a ghost story without easy ghosts. And it is a question that will not let go of you after the last page: How much does one act of mercy actually weigh?`,
     retailers: {
-      amazon: '#',
-      barnesAndNoble: '#',
-      appleBooks: '#',
-      googlePlay: '#',
+      amazon: 'https://www.amazon.com/Prisoners-Fort-Reno-Theodore-Edwards/dp/B0GW5YHPTD/ref=sr_1_1?sr=8-1',
     },
     formats: ['Hardcover', 'Paperback', 'eBook'],
   },
@@ -91,10 +86,9 @@ Rooted in documented accounts: the NBA players who have refused to stay here, th
 
 What does a person carry out of a building where someone was never allowed to leave?`,
     retailers: {
-      amazon: '#',
-      barnesAndNoble: '#',
-      appleBooks: '#',
-      googlePlay: '#',
+      amazon: 'https://www.amazon.com/Effie-Tenth-Floor-Theodore-Edwards-ebook/dp/B0GX34K89G/ref=sr_1_1?crid=1579531PETM2R&dib=eyJ2IjoiMSJ9.sKht4-JnjIq1GWBeyn_R43au9BxUQMfaobhZsHFlNRk.BhfoE0Q1XHeydDiE5pbvW2UpY7mChPpOnEbZqlxSiyw&dib_tag=se&keywords=effie+on+the+tenth+floor&qid=1776463820&sprefix=effie+on+the+ten%2Caps%2C244&sr=8-1',
+      barnesAndNoble: 'https://www.barnesandnoble.com/w/effie-on-the-tenth-floor-theodore-edwards/1149908673?ean=9798295807206',
+      walmart: 'https://www.walmart.com/ip/Effie-on-the-Tenth-Floor-Paperback-9798295807190/20087357068?classType=REGULAR&from=%2Fsearch&sid=b6775f99-2462-455c-b4a9-3a0cc856052f',
     },
     formats: ['Hardcover', 'Paperback', 'eBook'],
   },
