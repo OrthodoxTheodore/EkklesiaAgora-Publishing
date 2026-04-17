@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ekklesia-agora.vercel.app)",
+      "Bash(cp \"C:/Users/Owner/Downloads/The_Fence_Between_Us/Artwork/The fence between us updated audiobook cover art.png\" \"C:/Users/Owner/Downloads/EkklesiaAgora Publishing Website/public/covers/fence-between-us.png\")",
+      "Bash(cp \"C:/Users/Owner/Downloads/Prisoners of Fort Reno/ai_Generated_Image_Ft Reno POW soldiers.png\" \"C:/Users/Owner/Downloads/EkklesiaAgora Publishing Website/public/covers/prisoners-of-fort-reno.png\")",
+      "Bash(cp \"C:/Users/Owner/Downloads/Effie on the Tenth Floor/Skirvin.jpg\" \"C:/Users/Owner/Downloads/EkklesiaAgora Publishing Website/public/covers/effie-on-tenth-floor.jpg\")",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(gh repo:*)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
