@@ -12,8 +12,12 @@ export interface Book {
     amazon?: string
     barnesAndNoble?: string
     walmart?: string
+    booksAMillion?: string
     appleBooks?: string
     googlePlay?: string
+    googlePlayAudiobook?: string
+    spotify?: string
+    bookshopOrg?: string
     kobo?: string
   }
   formats: string[]
@@ -37,6 +41,10 @@ Four years of conflict will scatter these people across battlefields and into hi
 This is a story about the fences we build and the boundaries we must cross to find what it means to be forgiven, to forgive, and to come home to love.`,
     retailers: {
       amazon: 'https://www.amazon.com/Fence-Between-Us-Theodore-Edwards/dp/B0GW19CD1T/ref=sr_1_1?sr=8-1',
+      barnesAndNoble: 'https://www.barnesandnoble.com/w/the-fence-between-us-theodore-edwards/1149961477?ean=9798295843198',
+      googlePlay: 'https://play.google.com/store/books/details?id=WgPUEQAAQBAJ',
+      googlePlayAudiobook: 'https://play.google.com/store/audiobooks/details/The_Fence_Between_Us?id=AQAAAEBaMw1zRM&hl=en_US',
+      bookshopOrg: 'https://bookshop.org/p/books/the-fence-between-us-theodore-edwards/d5605ab3b34567e9?ean=9798258331809&next=t',
     },
     formats: ['Hardcover', 'Paperback', 'eBook', 'Audiobook'],
   },
@@ -105,6 +113,9 @@ What does a person carry out of a building where someone was never allowed to le
       amazon: 'https://www.amazon.com/Effie-Tenth-Floor-Theodore-Edwards-ebook/dp/B0GX34K89G/ref=sr_1_1?crid=1579531PETM2R&dib=eyJ2IjoiMSJ9.sKht4-JnjIq1GWBeyn_R43au9BxUQMfaobhZsHFlNRk.BhfoE0Q1XHeydDiE5pbvW2UpY7mChPpOnEbZqlxSiyw&dib_tag=se&keywords=effie+on+the+tenth+floor&qid=1776463820&sprefix=effie+on+the+ten%2Caps%2C244&sr=8-1',
       barnesAndNoble: 'https://www.barnesandnoble.com/w/effie-on-the-tenth-floor-theodore-edwards/1149908673?ean=9798295807206',
       walmart: 'https://www.walmart.com/ip/Effie-on-the-Tenth-Floor-Paperback-9798295807190/20087357068?classType=REGULAR&from=%2Fsearch&sid=b6775f99-2462-455c-b4a9-3a0cc856052f',
+      googlePlay: 'https://play.google.com/store/books/details?id=WvvREQAAQBAJ',
+      booksAMillion: 'https://www.booksamillion.com/p/Effie-Tenth-Floor/Theodore-Edwards/9798295807190',
+      bookshopOrg: 'https://bookshop.org/p/books/effie-on-the-tenth-floor-theodore-edwards/dedcf47efa109ce4?ean=9798295807190&next=t',
     },
     formats: ['Hardcover', 'Paperback', 'eBook'],
   },

@@ -20,8 +20,12 @@ const retailerLabels: Record<string, string> = {
   amazon: 'Amazon',
   barnesAndNoble: 'Barnes & Noble',
   walmart: 'Walmart',
+  booksAMillion: 'Books-A-Million',
   appleBooks: 'Apple Books',
-  googlePlay: 'Google Play',
+  googlePlay: 'Google Play Books',
+  googlePlayAudiobook: 'Google Play Audiobooks',
+  spotify: 'Spotify',
+  bookshopOrg: 'Bookshop.org',
   kobo: 'Kobo',
 }
 

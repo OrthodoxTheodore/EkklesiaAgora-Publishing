@@ -98,7 +98,7 @@ export default function Home() {
           {/* Header */}
           <div className="text-center mb-12">
             <p className="font-cinzel text-xs tracking-[0.35em] uppercase text-gold/60 mb-3">
-              Coming Soon · Audiobook Edition
+              Now Available · Audiobook Edition
             </p>
             <h2 className="font-cinzel text-gold text-3xl md:text-4xl leading-snug mb-1">
               The Fence Between Us
@@ -108,9 +108,9 @@ export default function Home() {
             </p>
             <Divider />
             <p className="font-garamond text-parchment/80 text-lg leading-relaxed max-w-2xl mx-auto">
-              The full audiobook edition is on its way — bringing the Blue Ridge Mountains, the cedar
-              fence, and the families divided by war to life through sound. Listen to two sample
-              chapters right here before it arrives on Audible, Apple Books, and more.
+              The full audiobook edition is here — bringing the Blue Ridge Mountains, the cedar
+              fence, and the families divided by war to life through sound. Available now on
+              Google Play Audiobooks and Spotify. Listen to four sample chapters right here.
             </p>
           </div>
 
@@ -136,6 +136,14 @@ export default function Home() {
               <AudioPlayer
                 src="/audio/fence-chapter-1.mp3"
                 label="Chapter 1"
+              />
+              <AudioPlayer
+                src="/audio/fence-chapter-2.mp3"
+                label="Chapter 2"
+              />
+              <AudioPlayer
+                src="/audio/fence-chapter-3.mp3"
+                label="Chapter 3"
               />
               <AudioPlayer
                 src="/audio/fence-chapter-4.mp3"
