@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { books } from '@/lib/books'
-import AudioPlayer from '@/components/AudioPlayer'
 
 function Divider() {
   return (
@@ -50,115 +49,6 @@ export default function Home() {
           >
             Contact Us
           </Link>
-        </div>
-      </section>
-
-      {/* Coming Soon — The Hearth Between Us */}
-      <section className="py-24 px-6 bg-navy-mid border-y border-gold/15">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
-          <div className="w-64 flex-shrink-0">
-            <div className="relative aspect-square border border-gold/30 overflow-hidden shadow-[0_0_40px_rgba(180,145,60,0.15)]">
-              <Image
-                src="/covers/hearth-between-us.png"
-                alt="The Hearth Between Us by Theodore Edwards"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-          <div className="flex-1 text-center md:text-left">
-            <p className="font-cinzel text-xs tracking-[0.35em] uppercase text-gold/60 mb-3">
-              Coming Soon · June 1, 2026
-            </p>
-            <h2 className="font-cinzel text-gold text-3xl md:text-4xl leading-snug mb-1">
-              The Hearth Between Us
-            </h2>
-            <p className="font-garamond italic text-parchment/50 text-base mb-6">
-              by Theodore Edwards · A companion to <em>The Fence Between Us</em>
-            </p>
-            <Divider />
-            <p className="font-garamond text-parchment/80 text-lg leading-relaxed mb-8">
-              When the war ends and the men come home, the harder work begins — learning to live
-              again beside the people who waited. The hearth is still burning. Whether they can
-              find their way back to it is another question entirely.
-            </p>
-            <Link
-              href="/books#hearth-between-us"
-              className="font-cinzel text-xs tracking-[0.2em] uppercase bg-gold text-navy px-8 py-3 hover:bg-gold-light transition-colors"
-            >
-              Learn More
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Audiobook Ad — The Fence Between Us */}
-      <section className="py-24 px-6 bg-navy-mid border-y border-gold/15">
-        <div className="max-w-4xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-12">
-            <p className="font-cinzel text-xs tracking-[0.35em] uppercase text-gold/60 mb-3">
-              Now Available · Audiobook Edition
-            </p>
-            <h2 className="font-cinzel text-gold text-3xl md:text-4xl leading-snug mb-1">
-              The Fence Between Us
-            </h2>
-            <p className="font-garamond italic text-parchment/50 text-base mb-1">
-              by Theodore Edwards
-            </p>
-            <Divider />
-            <p className="font-garamond text-parchment/80 text-lg leading-relaxed max-w-2xl mx-auto">
-              The full audiobook edition is here — bringing the Blue Ridge Mountains, the cedar
-              fence, and the families divided by war to life through sound. Available now on
-              Google Play Audiobooks and Spotify. Listen to four sample chapters right here.
-            </p>
-          </div>
-
-          {/* Cover + players side by side on desktop */}
-          <div className="flex flex-col md:flex-row gap-10 items-start">
-            {/* Book cover */}
-            <div className="w-full md:w-56 flex-shrink-0 mx-auto md:mx-0">
-              <div className="relative aspect-square border border-gold/30 overflow-hidden shadow-[0_0_30px_rgba(180,145,60,0.12)]">
-                <Image
-                  src="/covers/fence-between-us.png"
-                  alt="The Fence Between Us by Theodore Edwards"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Sample players */}
-            <div className="flex-1 flex flex-col gap-4">
-              <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-gold/50 mb-1">
-                Listen to a Sample
-              </p>
-              <AudioPlayer
-                src="/audio/fence-chapter-1.mp3"
-                label="Chapter 1"
-              />
-              <AudioPlayer
-                src="/audio/fence-chapter-2.mp3"
-                label="Chapter 2"
-              />
-              <AudioPlayer
-                src="/audio/fence-chapter-3.mp3"
-                label="Chapter 3"
-              />
-              <AudioPlayer
-                src="/audio/fence-chapter-4.mp3"
-                label="Chapter 4"
-              />
-              <div className="mt-4">
-                <Link
-                  href="/books#fence-between-us"
-                  className="font-cinzel text-xs tracking-[0.2em] uppercase border border-gold/50 text-gold px-6 py-2.5 hover:border-gold hover:bg-gold/10 transition-colors"
-                >
-                  About the Book
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

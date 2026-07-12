@@ -42,11 +42,11 @@ This is a story about the fences we build and the boundaries we must cross to fi
     retailers: {
       amazon: 'https://www.amazon.com/Fence-Between-Us-Theodore-Edwards/dp/B0GW19CD1T/ref=sr_1_1?sr=8-1',
       barnesAndNoble: 'https://www.barnesandnoble.com/w/the-fence-between-us-theodore-edwards/1149961477?ean=9798295843198',
+      walmart: 'https://www.walmart.com/ip/The-Fence-Between-Us-Paperback/20137804422?classType=REGULAR&from=/search',
       googlePlay: 'https://play.google.com/store/books/details?id=WgPUEQAAQBAJ',
-      googlePlayAudiobook: 'https://play.google.com/store/audiobooks/details/The_Fence_Between_Us?id=AQAAAEBaMw1zRM&hl=en_US',
       bookshopOrg: 'https://bookshop.org/p/books/the-fence-between-us-theodore-edwards/d5605ab3b34567e9?ean=9798258331809&next=t',
     },
-    formats: ['Hardcover', 'Paperback', 'eBook', 'Audiobook'],
+    formats: ['Hardcover', 'Paperback', 'eBook'],
   },
   {
     id: 'hearth-between-us',
