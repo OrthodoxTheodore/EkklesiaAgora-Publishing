@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { books } from '@/lib/books'
+import { DONATE_URL, YOUTUBE_URL, YOUTUBE_CHANNEL_NAME } from '@/lib/support'
 
 function Divider() {
   return (
@@ -49,6 +50,57 @@ export default function Home() {
           >
             Contact Us
           </Link>
+        </div>
+      </section>
+
+      {/* News from the Press */}
+      <section className="py-20 px-6 bg-navy-mid">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-gold/60 mb-2">
+            News from the Press
+          </p>
+          <h2 className="font-cinzel text-gold text-3xl mb-2">Our Latest Creation</h2>
+          <Divider />
+          <h3 className="font-cinzel text-gold-light text-xl md:text-2xl mb-4">
+            {YOUTUBE_CHANNEL_NAME}
+          </h3>
+          <p className="font-garamond text-parchment/80 text-lg leading-relaxed mb-8">
+            EkklesiaAgora Publishing is proud to announce our newest work: a YouTube channel
+            examining the films, music, games, and stories of popular culture through the lens of
+            the Christian faith — and bringing to light the occult themes woven through them.
+          </p>
+          <a
+            href={YOUTUBE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block font-cinzel text-xs tracking-[0.2em] uppercase bg-gold text-navy px-8 py-3 hover:bg-gold-light transition-colors mb-14"
+          >
+            Watch on YouTube
+          </a>
+
+          <div className="border-t border-gold/15 pt-10">
+            <p className="font-cinzel text-xs tracking-[0.3em] uppercase text-gold/60 mb-3">
+              New Books on the Way
+            </p>
+            <p className="font-garamond text-parchment/80 text-lg leading-relaxed">
+              More titles are coming soon, including{' '}
+              <span className="italic text-gold-light">The Road to Theosis</span>, the upcoming
+              book from Theodore Edwards.
+            </p>
+          </div>
+
+          <p className="font-garamond italic text-parchment/50 text-base leading-relaxed mt-10">
+            If our books and videos have blessed you, please consider{' '}
+            <a
+              href={DONATE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold/80 underline decoration-gold/30 underline-offset-4 hover:text-gold hover:decoration-gold transition-colors"
+            >
+              supporting our work
+            </a>
+            .
+          </p>
         </div>
       </section>
 

@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import { DONATE_URL } from '@/lib/support'
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -39,6 +40,14 @@ export default function Navigation() {
               {label}
             </Link>
           ))}
+          <a
+            href={DONATE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-cinzel text-[0.65rem] tracking-[0.2em] uppercase border border-gold/40 text-gold/80 px-3 py-1.5 hover:border-gold hover:text-gold hover:bg-gold/10 transition-colors"
+          >
+            Donate
+          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -66,6 +75,15 @@ export default function Navigation() {
               {label}
             </Link>
           ))}
+          <a
+            href={DONATE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-cinzel text-sm tracking-widest text-gold/80 hover:text-gold transition-colors"
+            onClick={() => setMobileOpen(false)}
+          >
+            Donate
+          </a>
         </div>
       )}
     </nav>
